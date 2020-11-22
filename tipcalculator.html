@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tip Calculator For Cheri. You're Welcome!</title>
+    <!-- Normalize.css-->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <!-- Styles-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Cheri's Tip Calculator</h1>
+        <div id="calculator">
+
+            <form>
+                <label>
+                    How Much Was Your Bill?<br>
+                    R <input type="text" id="billAmount">
+                </label>
+                <label>
+                    How Was Your Service?<br>
+                    <select id="serviceQuality">
+                        <option disabled selected value="0">--Choose an Option</option>
+                        <option value="0.3">Amazing - 30%</option>
+                        <option value="0.2">Great - 20%</option>
+                        <option value="0.15">Better Than Average - 15%</option>
+                        <option value="0.1">Normal - 10%</option>
+                        <option value="0.05">Bad And You're Cheap! - 5%</option>
+                        <!--<option value="0.00">Terrible And You're Pissed!!! - 0%</option>-->
+                    </select>
+                </label>
+                <label>
+                    How Many People Are Sharing The Bill?<br>
+                    <input type="text" id="totalPeople"> People
+                    
+                </label>
+                    <button type="button" id="calculate">Calculate!</button>
+
+            </form>
+
+        </div><!--Calculator-->
+        <div id="totalTip">
+            <sup>R</sup><span id="tip">0.00</span>
+            <small id="each">Each</small>
+        </div><!--totalTip-->
+
+
+    </div><!--Container-->
+
+
+    <script type="text/javascript" src="app.js"></script>   
+</body>
+
+
+</html>
